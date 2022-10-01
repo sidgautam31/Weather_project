@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<div class="weather_result">
+  <img class="icon_image" src=<%=image%>>
+  <div class="description">
+    <p><b><%=city%>,<%=country%></b></p>
+    <p> <%= temp %> degrees celcius, <%=descriptionn%>. wind <%=wind%>m/s.</p>
+    <p>Geo coords (<%=coor2%>,<%=coor1%>)</p>
+  </div>
+</div>
+
+<%- include("partials/footer") %>

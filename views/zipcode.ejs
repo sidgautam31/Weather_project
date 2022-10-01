@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<main class="container">
+  <div class="heading">
+    <h3><%= new Date().toDateString()%></h3>
+  </div>
+  <form class="form" action="/zipcode" method="post">
+    <h6><label class="city_input" for="zipcode">Zipcode</label></h6>
+    <input class="form-control " type="text" name="zipcode">
+    <h6><label class="city_input" for="country_code">Country Code</label></h6>
+    <input class="form-control " type="text" name="country_code">
+    <button class=" submit_btn btn btn-block btn-outline-dark " type="submit" name="button">Submit</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<main class="container ">
+  <div class="heading">
+    <h3><%= new Date().toDateString()%></h3>
+  </div>
+  <form class="form" action="/" method="post">
+    <h6><label class="city_input" for="cityInput">City</label></h6>
+    <input class="form-control " id="cityInput" type="text" name="cityName">
+    <button class=" submit_btn btn btn-block btn-outline-dark " type="submit" name="button">Submit</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

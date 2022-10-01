@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<main class="container">
+  <div class="heading">
+    <h3><%= new Date().toDateString()%></h3>
+  </div>
+  <form class="form" action="/coord" method="post">
+    <h6><label class="city_input" for="lat">latitude</label></h6>
+    <input class="form-control " id="cityInput" type="text" name="lat">
+    <h6><label class="city_input" for="lon">longitude</label></h6>
+    <input class="form-control " id="cityInput" type="text" name="lon">
+
+    <button class=" submit_btn btn btn-block btn-outline-dark " type="submit" name="button">Submit</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>
